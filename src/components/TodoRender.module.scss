@@ -1,0 +1,81 @@
+.todoCards {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin-top: 200px;
+
+	.todoCard {
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		padding: 30px;
+
+		h1 {
+			margin-bottom: 10px;
+			font-size: 20px;
+			color: #333;
+			text-decoration: none;
+		}
+
+		p {
+			margin-bottom: 5px;
+			font-size: 20px;
+			color: #666;
+		}
+
+		.buttons {
+			display: flex;
+			button {
+				margin-right: 10px;
+				padding: 8px 16px;
+				font-size: 14px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+
+				&.editButton {
+					background-color: #4caf50;
+					color: #fff;
+
+					&:hover {
+						background-color: #388e3c;
+					}
+				}
+
+				&.deleteButton {
+					background-color: #f44336;
+					color: #fff;
+
+					&:hover {
+						background-color: #d32f2f;
+					}
+				}
+			}
+			input[type="checkbox"] {
+				width: 50px;
+				height: 40px;
+				margin-right: 5px;
+				cursor: pointer;
+			}
+		}
+
+		.inputsEdite {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			margin-top: 10px;
+			button {
+				margin-right: 10px;
+				padding: 8px 16px;
+				font-size: 14px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+				background-color: rgb(15, 87, 203);
+				color: white;
+			}
+		}
+	}
+}
